@@ -8,10 +8,17 @@ To write a program to implement the SVM For Spam Mail Detection.
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+```
+1.  Use the chardet library to detect the file's encoding by reading a portion of the file.
+2.  Read the CSV file using pandas.read_csv() and store the dataset in a DataFrame (data).
+3.  Use data.info() to check the structure (e.g., data types and number of non-null values).
+4.  Data Preparation (Feature and Label Extraction)
+5.  Split the dataset into training and testing sets using train_test_split from sklearn
+6.  cv.fit_transform(x_train): Fit and transform the training data into a bag-of-words representation.
+7.  Initialize the Support Vector Classifier (SVC) and train the model using svc.fit(x_train, y_train)
+8. Use the trained SVC model to make predictions on the test data (y_pred = svc.predict(x_test)).
+9. Evaluate the model's performance using the accuracy_score function from sklearn.metrics.
+```
 
 ## Program:
 ```
